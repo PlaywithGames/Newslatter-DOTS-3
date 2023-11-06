@@ -10,11 +10,9 @@ namespace Player_Monster
         [SerializeField] private GameObject playerPrefab;
         [SerializeField] private int numPlayers = 100;
         [SerializeField] private float spawnRadius = 30f;
-
         private NativeArray<Vector3> playerPositions;
         private NativeArray<float> randomAngles;
         private NativeArray<float> randomDistances;
-        
         public bool isSpawnComplete = false;
 
         void Start()

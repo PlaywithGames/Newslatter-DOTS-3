@@ -35,7 +35,8 @@ namespace Object_Pool_Job
 
         private int UsedInstanceCount = 0;
         
-        public PoolInfoSets(string _storeName, Transform _parentTF, Transform _BundleTF)
+        public PoolInfoSets(string _storeName, 
+            Transform _parentTF, Transform _BundleTF)
         {
             ParentTF = _parentTF;
             BundleTF = _BundleTF;
@@ -71,7 +72,8 @@ namespace Object_Pool_Job
             return _spawnObj;
         }
         
-        public void PushData(GameObject _storeObj, eStoreType _storeType, System.Int32 setLayer = -1)
+        public void PushData(GameObject _storeObj, 
+            eStoreType _storeType, System.Int32 setLayer = -1)
         {
             GLUtil.SetActiveObject(_storeObj, false);
 

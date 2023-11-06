@@ -76,7 +76,7 @@ namespace Player_Monster_Projectile_Simulation
             }
         }
         
-        private void Update()
+        private void LateUpdate()
         {
             if (!isInit)
             {

@@ -120,8 +120,10 @@ namespace Object_Pool_Job
                 hasArrivedIndexArray = hasArrivedIndexArray,
             };
             // "SetStartPointJob"을 "ApplyVelocityJob"의 결과가 나온 뒤에 스케줄링
-            applyVelocityJobHandle = applyVelocityJob.Schedule(transformAccessArray);
-            setStartPointJobHandle = setStartPointJob.Schedule(transformAccessArray, applyVelocityJobHandle);
+            applyVelocityJobHandle = 
+                applyVelocityJob.Schedule(transformAccessArray);
+            setStartPointJobHandle = 
+                setStartPointJob.Schedule(transformAccessArray, applyVelocityJobHandle);
         }
 
         private void LateUpdate()
