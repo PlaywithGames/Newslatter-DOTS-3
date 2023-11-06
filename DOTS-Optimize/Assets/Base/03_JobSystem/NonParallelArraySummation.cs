@@ -2,11 +2,9 @@ using System.Diagnostics;
 using System.Linq;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
-
 public class NonParallelArraySummation : MonoBehaviour
 {
     [SerializeField] private int count = 5000;
-
     private void Start()
     {
         var aValue = Enumerable.Repeat(1f, count).ToArray();
@@ -23,8 +21,8 @@ public class NonParallelArraySummation : MonoBehaviour
 
         Debug.Log($"ElapsedMilliseconds: {watch.ElapsedMilliseconds}ms");
     }
-
-    private static void CalculateArraySum(float[] aValue, float[] bValue, int length)
+    private static void CalculateArraySum
+        (float[] aValue, float[] bValue, int length)
     {
         float[] result = new float[length];
 
