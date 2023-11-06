@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/PerformanceCheck/01_Projectile_Simulation/Scenes/SealM_Projectile_Job_5000.unity
+    guid: 87ea4a579b6353e4b86f8462dd405a20
+  - enabled: 0
+    path: Assets/PerformanceCheck/01_Projectile_Simulation/Scenes/SealM_Projectile_Job_10000.unity
+    guid: 3244db007ee8b9d48ad34a11ce38ee69
+  - enabled: 0
+    path: Assets/PerformanceCheck/01_Projectile_Simulation/Scenes/SealM_Projectile_Job_500.unity
+    guid: f027aa09895d88948942afc1fe41640f
+  - enabled: 0
+    path: Assets/Scenes/WaveGenerator/WaveGenerator_Job.unity
+    guid: 1b3b469ea94fcee40a4256eaceb80f70
+  - enabled: 0
+    path: Assets/PerformanceCheck/Projectile_Simulation/Scenes/SealM_Slerp_N_Job.unity
+    guid: 96646311fe03523409f143c3b8838d8e
+  - enabled: 0
+    path: Assets/Scenes/AStart.unity
+    guid: 3bf2ef1b70d9c994b88f1f7d11127c05
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: bc0e19225c62bc4458f70120ff27e6d7,
+      type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: 99a5b4a20d145a341be9662c861280d7, type: 2}
